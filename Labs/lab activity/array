@@ -1,0 +1,39 @@
+<?PHP
+
+$a = array();
+
+//$a = array("Orange", "banana", "Apple");
+//if we want to print it 
+//echo $a[0];
+
+$a [ 'p1' ] = "Orange" ;
+$a [ 'p2' ] = "banana" ;
+$a [ 'p3' ] = "Apple" ;
+
+//print_r ( $a); 
+
+echo $a['p1'];
+
+echo "<br>";
+echo  "The counts of the elements in the array: ";
+// to proint the count the element in the array ; 
+$count = count($a);
+echo $count;
+
+
+// loop that print all the elements on the array 
+echo "<br>";
+
+
+foreach ($a as $element) {
+    echo $element . " ";
+}
+
+echo "<br>";
+// If statement that if a certain array element has certain value simple statement is printed my array contain Orange banana and apple
+if (in_array("banana", $a)) {
+    echo "The array contains banana.";
+}
+
+
+?>
